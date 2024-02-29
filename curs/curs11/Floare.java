@@ -12,10 +12,10 @@ public class Floare {
     /**
      * Constructor
      */
-//    Floare(){
-//
-//    }
-//
+    Floare() {
+        this.miros = "de trandafir";
+    }
+
     Floare(int numarPetaleParam, String culoareParam) {
 
         this.numarPetale = numarPetaleParam;
@@ -34,13 +34,33 @@ public class Floare {
         return 10;
     }
 
-    String metodaCareIntoarceString(){
+    String metodaCareIntoarceString() {
         return "Returnez String";
     }
 
-    void metodaCareNuReturneazaNimic(){
+    void metodaCareNuReturneazaNimic() {
         System.out.println("Metoda nu returneaza nimic");
     }
+
+    /**
+     * Getter & Setter
+     */
+    int getNumarPetale() {
+        return numarPetale;
+    }
+
+    void setNumarPetale(int numarPetaleParametru) {
+        this.numarPetale = numarPetaleParametru;
+    }
+
+//    int setAreGhivechi(){
+//        return 100;
+//    }
+
+
+
+
+    /** */
 
 
 }
