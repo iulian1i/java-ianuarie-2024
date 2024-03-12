@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -65,6 +66,12 @@ public class Main {
             System.out.println(fruct);
         }
 
+        /** Nu copiem array-ul mai jos!*/
+        String[] listaDeFructeTryCopy = listaDeFructe;
+        Arrays.sort(listaDeFructeTryCopy, Comparator.reverseOrder());
+        for (String fruct : listaDeFructe) {
+            System.out.println(fruct);
+        }
 
     }
 
