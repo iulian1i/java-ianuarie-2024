@@ -9,4 +9,8 @@ public class GenericPantofi {
     String brand;
     double pret;
 
+    void metodaGenericPantofi() {
+        System.out.println("Metoda din clasa GenericPantofi!");
+    }
+
 }
