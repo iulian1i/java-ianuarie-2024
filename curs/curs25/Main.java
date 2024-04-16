@@ -10,7 +10,7 @@ public class Main {
         /** Clasa anonima=>clasa care extinde(extends) clasa Car */
         Car carAnonim = new Car() {
 
-            String nume;
+            public String nume;
 
             @Override
             public void metodaDinClasaAnonima() {
@@ -25,8 +25,9 @@ public class Main {
 
         carAnonim.functioneaza();
         carAnonim.metodaDinClasaAnonima();
+        System.out.println("---------------------------");
 
-        /**Clasa anonima */
+        /**Clasa anonima (1)*/
         CumparaturiInterface cumparaturiInterface1 = new CumparaturiInterface() {
             @Override
             public void cumpara() {
@@ -34,10 +35,25 @@ public class Main {
             }
         };
 
+        /**Lambda ()->{};
+         * Output-ul este identic cu (1)
+         * */
+        CumparaturiInterface cumparaturiInterface2 = () -> System.out.println("S-a apelat metoda cumpara() prin Lambda");
+        cumparaturiInterface1.cumpara();
+        cumparaturiInterface2.cumpara();
+        System.out.println("---------------------------");
 
+        CumparaturiInterface cumparaturiInterface3 = () -> {
+            int numarZile = 3;
+            if (numarZile == 3) {
+                //code
+            }
+            System.out.println("S-a apelat metoda cumpara() prin Lambda");
+            System.out.println("Text");
+        };
 
-
-
+//        System.out.print("Ceva");
+//        System.out.print("---Ceva");
 
     }
 
