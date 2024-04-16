@@ -14,9 +14,8 @@ public class Main {
             }
 
         };
-
+        
         Car car = new Car() {
-
             @Override
             public void functioneaza() {
                 //code
@@ -26,6 +25,9 @@ public class Main {
 
         car.functioneaza();
 
+        /**Lambda expression */
+        CumparaturiInterface ceva = () -> System.out.println("Ceva");
+        ceva.cumpara();
 
         /**Continuat in curs 25 */
 //        /**Lambda expression */
